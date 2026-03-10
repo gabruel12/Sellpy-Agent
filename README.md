@@ -1,3 +1,5 @@
+<img src="imagens/sellpylogopixelart.png" alt="Logo Sellpy PixelArt" width="600" height="300">
+
 # Sellpy
 
 ### Já pensou em ganhar uma ajudinha na hora da venda?
@@ -17,3 +19,5 @@ e ele já anota de uma forma que você possa entender como "27 reais em compras.
 ### Como te ajudamos nas vendas?
 
 A Sellpy pode facilitar sua vida automatizando tarefas que você perdia seu tempo, **e tempo significante pode te custar um prejuízo ao fim do mês**! Nossa tecnologia anota vendas direto pelo seu whatsapp, isso quer dizer, atualizamos ao vivo seu saldo, sua tabela em excel e ainda te passamos uma estatística ao fim do seu expediente que você define, para que tenha noção de quantos você ganhou ao dia!
+
+Copyright &copy; 2026 GabrielRodrigues
