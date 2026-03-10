@@ -3,7 +3,7 @@ name: Python CI
 on:
   push:
     branches: [ main ]
-  pull_requests:
+  pull_request:
     branches: [ main ]
 jobs:
   build:
@@ -27,3 +27,8 @@ jobs:
       - name: Run tests
         run: |
           python -m pytest
+
+      - name: Start API
+        run: |
+          pip install uvicorn
+          timeout 5 uvicorn main:app
