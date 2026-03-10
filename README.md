@@ -1,4 +1,4 @@
-<img src="imagens/sellpylogopixelart.png" alt="Logo Sellpy PixelArt" width="600" height="300">
+<img width="1024" height="1024" alt="sellpylogopixelart" src="https://github.com/user-attachments/assets/5a73ec89-cc23-46fd-aa0b-040b9a813496"width="600" height="300" />
 
 # Sellpy
 
