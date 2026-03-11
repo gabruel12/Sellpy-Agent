@@ -1,5 +1,5 @@
 
-<img width="600" height="300" alt="sellpylogopixelart" src="https://github.com/user-attachments/assets/5a73ec89-cc23-46fd-aa0b-040b9a813496" />
+<img width="600" height="700" alt="logosellpycorporativo" src="https://github.com/user-attachments/assets/466f29f4-8783-47e4-8e86-a0398285d5e4" />
 
 # Sellpy
 
