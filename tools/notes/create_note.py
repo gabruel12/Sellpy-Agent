@@ -1,10 +1,10 @@
 
 from database import models
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
 
 def create_note(title, content):
 
-    db = SessionLocal()
+    db = Sessionlocal()
 
     note = models.Notes(
         title=title,

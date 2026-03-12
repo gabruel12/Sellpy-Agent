@@ -1,10 +1,10 @@
 
 from database import models
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
 
 def update_goals(value):
 
-    db = SessionLocal()
+    db = Sessionlocal()
 
     goals = db.query(models.EarningsTarget).all()
 
@@ -14,10 +14,3 @@ def update_goals(value):
 
     db.commit()
     db.close()
-
-def goal_progress(goal):
-
-    progress = (goal.current_amount / goal.target_amount) * 100
-    remaining = goal.target_amount - goal.current_amount
-
-    return progress, remaining

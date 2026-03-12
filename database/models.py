@@ -2,7 +2,7 @@ from sqlalchemy import Column, Integer, String, Float, Date, DateTime
 from sqlalchemy.orm import declarative_base
 from database.connect import engine
 from datetime import datetime, timedelta
-from connect import SessionLocal
+from .connect import Sessionlocal
 
 Base = declarative_base()
 
@@ -40,7 +40,7 @@ Base.metadata.create_all(bind=engine)
 
 def auto_remind_task(task_id, minutes=60):
 
-    db = SessionLocal()
+    db = Sessionlocal()
     task = db.query(Tasks).filter(Tasks.id == task_id).first()
 
     if not task:

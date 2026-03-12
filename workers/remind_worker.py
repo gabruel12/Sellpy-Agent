@@ -1,6 +1,6 @@
 import time
 from datetime import datetime
-from database import SessionLocal
+from database.connect import Sessionlocal
 
 from database import models
 from tools.tasks.get_task import get_task
@@ -10,7 +10,7 @@ def remind_task():
 
     while True:
 
-        db = SessionLocal()
+        db = Sessionlocal()
         agora = datetime.now()
 
         tasks = db.query(models.Tasks)\

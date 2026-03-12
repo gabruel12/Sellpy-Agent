@@ -1,10 +1,10 @@
 
 from database import models
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
 
 def create_goal(title, amount, until_date):
 
-    db = SessionLocal()
+    db = Sessionlocal()
 
     goal = models.EarningsTarget(
         title=title,

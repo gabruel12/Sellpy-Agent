@@ -1,6 +1,5 @@
 
-from database import models 
-from database.connect import SessionLocal
+from database import models
 
 def predict_goal(goal, avg_income):
 

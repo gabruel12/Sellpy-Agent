@@ -1,10 +1,17 @@
 
-from datetime import datetime
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
+from database import models
+
+def goal_progress(goal):
+
+    progress = (goal.current_amount / goal.target_amount) * 100
+    remaining = goal.target_amount - goal.current_amount
+
+    return progress, remaining
 
 def goals_message(value):
 
-    db = SessionLocal()
+    db = Sessionlocal()
     goal = db.query(models.Goals).first()
     progress, remaining = goal_progress(goal)
     db.close()

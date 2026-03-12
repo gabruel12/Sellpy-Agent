@@ -1,14 +1,11 @@
 
 from database import models
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
 from sqlalchemy import func
 
 def create_relatory():
 
-    db = SessionLocal()
-
-    transactions = db.query(models.Transaction).all()
-    tasks = db.query(models.Tasks).all()
+    db = Sessionlocal()
 
     total_ganho = db.query(func.sum(models.Transaction.value)).filter(models.Transaction.type == "ganho").scalar()
     total_gasto = db.query(func.sum(models.Transaction.value)).filter(models.Transaction.type == "gasto").scalar()

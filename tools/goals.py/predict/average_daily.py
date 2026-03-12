@@ -1,6 +1,5 @@
 
 from database import models
-from database.connect import SessionLocal
 
 import datetime
 from datetime import datetime, timedelta

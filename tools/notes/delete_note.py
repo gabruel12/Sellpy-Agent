@@ -1,10 +1,10 @@
 
 from database import models
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
 
 def delete_note(note_id):
 
-    db = SessionLocal()
+    db = Sessionlocal()
 
     note = db.query(models.Notes).filter(models.Notes.id == note_id).first()
     if not note:

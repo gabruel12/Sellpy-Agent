@@ -1,12 +1,12 @@
 
 from database import models
-from database.connect import SessionLocal
+from database.connect import Sessionlocal
 
 from datetime import datetime
 
 def check_goal_deadline():
 
-    db = SessionLocal()
+    db = Sessionlocal()
     now = datetime.now()
 
     goals = db.query(models.Goals).filter(models.Goals.end_date <= now).all()
