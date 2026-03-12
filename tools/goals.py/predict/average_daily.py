@@ -1,6 +1,9 @@
 
 from database import models
-from database.connection import SessionLocal
+from database.connect import SessionLocal
+
+import datetime
+from datetime import datetime, timedelta
 
 def average_daily_income(db):
 

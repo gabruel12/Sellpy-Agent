@@ -1,6 +1,6 @@
 
 from database import models
-from database.connection import SessionLocal
+from database.connect import SessionLocal
 from average_daily import average_daily_income
 from goal_prediction import predict_goal
 
@@ -9,7 +9,7 @@ def goal_forecast():
     db = SessionLocal()
     goal = db.query(models.Goals).first()
     avg_income = average_daily_income(db)
-    days = goal_prediction(goal, avg_income)
+    days = predict_goal(goal, avg_income)
     db.close()
 
     if days:

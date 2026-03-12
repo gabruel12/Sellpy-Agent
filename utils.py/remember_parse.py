@@ -1,5 +1,4 @@
 from datetime import datetime, timedelta
-from database import SessionLocal
 
 def parse_remind_time(text: str) -> datetime:
     

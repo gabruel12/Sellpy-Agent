@@ -1,6 +1,6 @@
 
 from datetime import datetime
-from database.connection import SessionLocal
+from database.connect import SessionLocal
 
 def goals_message(value):
 

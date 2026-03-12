@@ -1,6 +1,6 @@
 
 from database import models
-from database.connection import SessionLocal
+from database.connect import SessionLocal
 from sqlalchemy import func
 
 def create_relatory():

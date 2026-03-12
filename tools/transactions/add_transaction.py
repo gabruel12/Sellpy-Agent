@@ -1,5 +1,5 @@
 
-from database.connection import SessionLocal
+from database.connect import SessionLocal
 from database.models import Transaction
 
 def add_transaction(date, description, type, value):

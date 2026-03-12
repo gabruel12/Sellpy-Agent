@@ -1,6 +1,6 @@
 
 from database import models
-from database.connection import SessionLocal
+from database.connect import SessionLocal
 
 def add_task(title, description, status):
 

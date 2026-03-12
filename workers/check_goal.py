@@ -1,6 +1,8 @@
 
 from database import models
-from database.connection import SessionLocal
+from database.connect import SessionLocal
+
+from datetime import datetime
 
 def check_goal_deadline():
 

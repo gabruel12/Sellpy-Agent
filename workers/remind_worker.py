@@ -1,8 +1,10 @@
 import time
 from datetime import datetime
 from database import SessionLocal
-import models
-from services.tasks_service import remember_task
+
+from database import models
+from tools.tasks.get_task import get_task
+from tools.tasks.task_message_remind import format_task
 
 def remind_task():
 
@@ -17,7 +19,7 @@ def remind_task():
             .all()
 
         for task in tasks:
-            message = remember_task(task.id)
+            message = format_task(task.id)
             print(message)
             task.remind_at = None
 

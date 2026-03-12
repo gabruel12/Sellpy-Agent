@@ -1,8 +1,8 @@
 
 from database import models 
-from database.connection import SessionLocal
+from database.connect import SessionLocal
 
-def predict_goal():
+def predict_goal(goal, avg_income):
 
     remaining = goal.target_amount - goal.current_amount
 
